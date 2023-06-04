@@ -1,3 +1,5 @@
+package Week1.src;
+
 public class Vehicle {
 
     String brand;

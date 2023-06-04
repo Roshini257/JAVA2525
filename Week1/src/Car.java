@@ -1,3 +1,5 @@
+package Week1.src;
+
 public class Car extends Vehicle {
 
     @Override
@@ -6,3 +8,4 @@ public class Car extends Vehicle {
 
     }
 }
+

@@ -1,3 +1,5 @@
+package Week1.src;
+
 public class CSE extends Department{
     int d = 4;
 
@@ -5,4 +7,6 @@ public class CSE extends Department{
     int getDepartmentSize() {
         return 15 ;
     }
+
+
 }

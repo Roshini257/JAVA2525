@@ -26,6 +26,10 @@ public class Main {
 
 //        static
         Static s = new Static();
+        //Static s2 = new Static();
+
+
+
         System.out.println("Static variable value is "+Static.age());
 
 
@@ -34,6 +38,24 @@ public class Main {
 
         Final f = new Final();
         f.finalstring();
+//        Reverse string
+
+        Reversenum r = new Reversenum();
+        r.reverse();
+
+//        Age
+
+        Age a =new Age();
+        a.person();
+
+//        Fib
+
+        Fibanocci f1 = new Fibanocci();
+        f1.fib();
+//        FizzBuzz
+
+       Buzz buzz=new Buzz();
+       buzz.Fizz();
 
 
 

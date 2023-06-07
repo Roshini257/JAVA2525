@@ -56,6 +56,28 @@ public class Main {
 
        Buzz buzz=new Buzz();
        buzz.Fizz();
+//MinMax
+
+        MinMax m =new MinMax();
+        m.sort();
+// Reverse array
+
+        ReverseArray ra=new ReverseArray();
+        ra.arrayReverse();
+
+//        Rotation
+
+        Rotation ro = new Rotation();
+
+        int rot[]={1,2,3,4,5};
+        ro.rotate(rot,2);
+        System.out.println("\"Rotated array is :\"");
+        for (int  aa= 0; aa < rot.length; aa++) {
+            System.out.print(rot[aa] + " ");
+        }
+
+
+
 
 
 

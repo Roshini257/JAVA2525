@@ -65,7 +65,7 @@ public class Main {
         ReverseArray ra=new ReverseArray();
         ra.arrayReverse();
 
-//        Rotation
+//       Array Rotation
 
         Rotation ro = new Rotation();
 
@@ -74,23 +74,38 @@ public class Main {
         System.out.println("\"Rotated array is :\"");
         for (int  aa= 0; aa < rot.length; aa++) {
             System.out.print(rot[aa] + " ");
+            System.out.println(" ");
         }
 
+//        StringVowel
+
+        Vowels v = new Vowels();
+        v.vow();
+
+//        anagram
+        anagram anagram= new anagram();
+        anagram.ana();
+
+
+//    reverseString
+        ReverseString rs = new ReverseString();
+        rs.rev();
+        System.out.println(" ");
+
+
+
+        //    Rotate string
+        RotateString rot1 = new RotateString();
+        rot1.rotate();
+        System.out.println("Result String rotated or not? :"+rot1.rotate());
+//
+
+
+    }
+
+    }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-}}

@@ -25,7 +25,7 @@ public class anagram {
         Arrays.sort(a2);
 
 
-        System.out.println("Result is :"+Arrays.equals(a1, a2));
+        System.out.println("Result is Anagram?:"+Arrays.equals(a1, a2));
 
 //        int len1 = one.length();
 //        int len2 = two.length();

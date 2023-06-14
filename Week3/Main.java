@@ -20,5 +20,19 @@ public class Main {
             System.out.println("CustomException caught: " + e.getMessage());
         }
 
+//        Thread
+
+        Numberthread num= new Numberthread();
+//          num.start();
+
+// Runnable
+
+
+        RunnableThread usingR=new RunnableThread();
+        Thread t=new Thread(usingR);
+
+        num.start();
+        t.start();
+
     }
     }

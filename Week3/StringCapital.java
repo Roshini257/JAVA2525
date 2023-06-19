@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class StringCapital{
     public static void main(String[] args) {
-        String[] s = {"Food", "Movie", "Novel", "Cooking", "Apple"};
+        String[] s = {"food", "movie", "novel", "cooking", "apple"};
 
         // Capitalize the first letter of each string
         String[] cap = Arrays.stream(s)

@@ -34,5 +34,23 @@ public class Main {
         num.start();
         t.start();
 
+//
+
+
+        BookingThread.TicketBookingSystem bookingSystem = new BookingThread.TicketBookingSystem();
+
+        BookingThread passenger1 = new BookingThread(bookingSystem, "John");
+        BookingThread passenger2 = new BookingThread(bookingSystem, "Alice");
+        BookingThread passenger3 = new BookingThread(bookingSystem, "Bob");
+        BookingThread passenger4 = new BookingThread(bookingSystem, "Emily");
+        BookingThread passenger5 = new BookingThread(bookingSystem, "David");
+        BookingThread passenger6 = new BookingThread(bookingSystem, "Emma");
+
+        passenger1.start();
+        passenger2.start();
+        passenger3.start();
+        passenger4.start();
+        passenger5.start();
+        passenger6.start();
     }
     }

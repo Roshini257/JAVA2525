@@ -3,16 +3,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan(basePackages = "src.main.java")
+
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(Person.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.roshini");
 
-        Person person = context.getBean(Person.class);
-        Address address = context.getBean(Address.class);
-        Account account = context.getBean(Account.class);
+        Person person = context.getBean("person",Person.class);
+//        Address address = context.getBean(Address.class);
+//        Account account = context.getBean(Account.class);
 
         // Set properties
 ////        person.setName("John Doe");

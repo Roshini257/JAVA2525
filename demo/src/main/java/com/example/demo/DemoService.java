@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.JustString;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,30 +10,26 @@ import java.util.List;
 @Service
 public class DemoService {
 
-    private List<String> names = new ArrayList<>();
+    private List<String> js= new ArrayList<>();
 
-
-    public DemoService(){
-        names.add("Roshini");
+    public List<String> getNames(){
+        return js;
     }
 
-    public List<String> getNames() {
-        return names;
+    public boolean postName(String s){
+        js=new ArrayList<>();
+        return js.add(s);
     }
 
-    public void addName(String name) {
-        names.add(name);
+    public boolean putName(String s){
+        return js.add(s);
     }
 
-    public void updateName(int index, String name) {
-        if (index >= 0 && index < names.size()) {
-            names.set(index, name);
-        }
-    }
+    public boolean deleteName(String s){
 
-    public void deleteName(int index) {
-        if (index >= 0 && index < names.size()) {
-            names.remove(index);
-        }
+        return js.remove(s);
+
+
+
     }
 }
